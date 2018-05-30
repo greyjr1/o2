@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>О2 Тарифные зоны</title>
+    {% load staticfiles %}
+    <link rel="icon" type="image/x-icon" href="{% static 'image/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+{#    <script type="text/javascript"> </script>#}
+{#    <script src="{% static 'js/jQuery.js' %}"></script>#}
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <style>
+        body {
+            background: #DDDDDD;}
+    </style>
+
+</head>
+<body>
+
+{% include "hole/wrapper.html" %}
+{% block content %}
+{% endblock %}
+<div class="container" align="center">
+     <img src="../../static/image/tax_zone.png" >
+</div>
+
+<br>
+</body>
+</html>

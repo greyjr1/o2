@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>О2 Переключения</title>
+    {% load staticfiles %}
+    <link rel="icon" type="image/x-icon" href="{% static 'image/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <style>
+        body {
+            background: #DDDDDD;}
+    </style>
+
+</head>
+
+<body>
+
+{% include "hole/wrapper.html" %}
+
+
+<p align="center">Вывод переключений </p>
+
+{% for reset in all_resets %}
+    <p> {{ reset }} </p>
+{% endfor %}
+
+
+
+</body>
